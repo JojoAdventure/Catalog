@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head th:fragment="head">
+    <meta charset="UTF-8">
+    <title th:text="$(title)">Catalog (working header)</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+</head>
+<body>
+
+<nav th:fragment="navigation">
+    <a href="/login" id="login">Sign Up/Sign In</a>
+    <a href="/">Home</a> |
+    <a href="/genres">Genres</a> |
+    <a href="/bands">Bands</a> |
+    <a href="/albums">Albums</a> |
+    <a href="/contact">Contact</a> |
+    <a href="/search" id="search">Search</a>
+</nav>
+
+</body>
+</html>
